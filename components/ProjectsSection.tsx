@@ -10,6 +10,7 @@ const projects = [
     image: "/freeapp.png",
     github: "https://github.com/Qubit1984/freechat-client",
     link: "http://chat.boliang.fun",
+    skills:["React","Node.js","MongoDB","Express.js"],
   },
   {
     name: "Weather App",
@@ -18,23 +19,19 @@ const projects = [
     image: "/weather.jpg",
     github: "https://github.com/Qubit1984/WeatherApp",
     link: "https://weather.boliang.fun",
+    skills:["Next.js"]
   },
   {
-    name: "Kator Family Photos",
+    name: "spotify clone",
     description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
-  } /*
-  {
-    name: "Kator Family Photos",
-    description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
-  },*/,
+      "clone for spotify that can play musics.",
+    image: "/spotify.png",
+    github: "https://github.com/Qubit1984/spotifyclone",
+    link: "https://spotify.boliang.lol/",
+    skills:["Vue.js"]
+  
+  } 
+  
 ];
 
 const ProjectsSection = () => {
@@ -80,6 +77,18 @@ const ProjectsSection = () => {
                         />
                       </Link>
                     </div>
+                   <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start ">
+                   {project.skills.map((item, idx) => {
+                    return (
+                     <p
+                    key={idx}
+                    className="bg-gray-200 px-3 py-2 mr-2 mt-3 text-gray-500 rounded font-semibold"
+                   >
+                    {item}
+                    </p>
+                   );
+                   })}
+                   </div>
                   </div>
                 </div>
               </SlideUp>
