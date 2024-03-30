@@ -5,12 +5,21 @@ import SlideUp from "./SlideUp";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 const projects = [
   {
+    name: "Japanese grammar website, ",
+    description:
+      "This is a Japanese learning website aimed at English native speakers.",
+    image: "/jp.png",
+    github: "https://github.com/Qubit1984/jpstudy",
+    link: "https://www.japanesegrammar.tokyo",
+    skills: ["Next.js", "supabase", "contentlayer"],
+  },
+  {
     name: "Realtime Chat App",
     description: "Freechat is a app that built using the MERN stack.",
     image: "/freeapp.png",
     github: "https://github.com/Qubit1984/freechat-client",
     link: "http://chat.boliang.fun",
-    skills:["React","Node.js","MongoDB","Express.js"],
+    skills: ["React", "Node.js", "MongoDB", "Express.js"],
   },
   {
     name: "Weather App",
@@ -19,19 +28,16 @@ const projects = [
     image: "/weather.jpg",
     github: "https://github.com/Qubit1984/WeatherApp",
     link: "https://weather.boliang.fun",
-    skills:["Next.js"]
+    skills: ["Next.js"],
   },
   {
     name: "spotify clone",
-    description:
-      "clone for spotify that can play musics.",
+    description: "clone for spotify that can play musics.",
     image: "/spotify.png",
     github: "https://github.com/Qubit1984/spotifyclone",
     link: "https://spotify.boliang.lol/",
-    skills:["Vue.js"]
-  
-  } 
-  
+    skills: ["Vue.js"],
+  },
 ];
 
 const ProjectsSection = () => {
@@ -77,18 +83,18 @@ const ProjectsSection = () => {
                         />
                       </Link>
                     </div>
-                   <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start ">
-                   {project.skills.map((item, idx) => {
-                    return (
-                     <p
-                    key={idx}
-                    className="bg-gray-200 px-3 py-2 mr-2 mt-3 text-gray-500 rounded font-semibold"
-                   >
-                    {item}
-                    </p>
-                   );
-                   })}
-                   </div>
+                    <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start ">
+                      {project.skills.map((item, idx) => {
+                        return (
+                          <p
+                            key={idx}
+                            className="bg-gray-200 px-3 py-2 mr-2 mt-3 text-gray-500 rounded font-semibold"
+                          >
+                            {item}
+                          </p>
+                        );
+                      })}
+                    </div>
                   </div>
                 </div>
               </SlideUp>
