@@ -14,6 +14,22 @@ const projects = [
     skills: ["Next.js", "supabase", "contentlayer"],
   },
   {
+    name: "AI voice chat, ",
+    description:
+      "A full-featured, AI voice chatbot built by Vercel，supabase，deepgram，asw polly.",
+    image: "/aispeak.png",
+    github: "https://github.com/Qubit1984/speak-with-ai",
+    link: "https://ai.japanesegrammar.tokyo",
+    skills: [
+      "Next.js",
+      "supabase",
+      "zusland",
+      "AWS polly",
+      "openai",
+      "deepgram",
+    ],
+  },
+  {
     name: "Realtime Chat App",
     description: "Freechat is a app that built using the MERN stack.",
     image: "/freeapp.png",

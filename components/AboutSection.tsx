@@ -16,6 +16,7 @@ const skills = [
   { skill: "MongoDB" },
   { skill: "Git" },
   { skill: "GitHub" },
+  { skill: "Linux" },
 ];
 
 const AboutSection = () => {
